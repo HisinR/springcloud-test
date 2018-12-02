@@ -27,4 +27,9 @@ public class SysRoleController {
 	public  List<SysRole> search() {
 		return roleService.findAll();
 	}
+	
+	@RequestMapping(value="findid",method=RequestMethod.GET)
+	public SysRole searchid(Integer id) {
+		return roleService.findById(id); 
+	}
 }

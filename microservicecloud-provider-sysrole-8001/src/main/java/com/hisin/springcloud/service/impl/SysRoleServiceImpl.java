@@ -33,5 +33,4 @@ public class SysRoleServiceImpl implements SysRoleService {
 		}
 		return sysRoleDao.findAll();
 	}
-	
 }
