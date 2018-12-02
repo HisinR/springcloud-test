@@ -28,7 +28,7 @@ public class SysRoleController {
 		return roleService.findAll();
 	}
 	
-	@RequestMapping(value="findid",method=RequestMethod.GET)
+	@RequestMapping(value="/findid",method=RequestMethod.GET)
 	public SysRole searchid(Integer id) {
 		return roleService.findById(id); 
 	}

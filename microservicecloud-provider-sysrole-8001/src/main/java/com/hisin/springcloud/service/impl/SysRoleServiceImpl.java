@@ -27,10 +27,6 @@ public class SysRoleServiceImpl implements SysRoleService {
 	 * 查找所有信息
 	 */
 	public List<SysRole> findAll() {
-		List<SysRole> findAll = sysRoleDao.findAll();
-		for (int i = 0; i < findAll.size(); i++) {
-			System.out.println("findAll的数据:"+findAll.get(i));
-		}
 		return sysRoleDao.findAll();
 	}
 }
