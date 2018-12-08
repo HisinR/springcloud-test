@@ -26,5 +26,14 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: microservicecloud-sysrole-8001
+    prefer-ip-address: true
+    
+info:
+  app.name: microservicecloud-sysRole
+  company.name: www.hisin.com
+  build.artifactId: microservicecloud-provider-sysrole-8001
+  build.version:  0.0.1-SNAPSHOT
       
       
