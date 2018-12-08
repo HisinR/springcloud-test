@@ -87,5 +87,6 @@
   	<module>microservicecloud-api</module>
   	<module>microservicecloud-provider-sysrole-8001</module>
   	<module>microservucecloud-consumer-sysrole-80</module>
+  	<module>microservicecloud-eureka-7001</module>
   </modules>
 </project>
