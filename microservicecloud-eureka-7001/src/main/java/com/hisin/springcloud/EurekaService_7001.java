@@ -2,15 +2,13 @@ package com.hisin.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-@EnableEurekaClient
-public class SysRoleApplication_8001 {
+@EnableEurekaServer //指明是Eureka的注册中心
+public class EurekaService_7001 {
 	
 	public static void main(String[] args) {
-	
-		SpringApplication.run(SysRoleApplication_8001.class, args);
-	
+		SpringApplication.run(EurekaService_7001.class, args);
 	}
 }
