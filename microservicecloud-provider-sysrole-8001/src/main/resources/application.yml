@@ -9,7 +9,7 @@ mybatis:
   
 spring:
    application:
-    name: microservicecloud-sysrole
+    name: microservicecloud-sysrole-8001 #微服务名字
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
@@ -25,7 +25,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://Eureka7001:7001/eureka
   instance:
     instance-id: microservicecloud-sysrole-8001
     prefer-ip-address: true

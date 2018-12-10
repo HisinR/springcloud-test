@@ -1,0 +1,39 @@
+server:
+  port: 8002
+  
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml        
+  type-aliases-package: com.hisin.springcloud.entities      
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml
+  
+spring:
+   application:
+    name: microservicecloud-sysrole-8002 #微服务名字
+   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/mmall
+    username: root
+    password: root
+    dbcp2:
+      min-idle: 5                                           
+      initial-size: 5                                       
+      max-total: 5                                         
+      max-wait-millis: 200
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://Eureka7001:7001/eureka
+  instance:
+    instance-id: microservicecloud-sysrole-8002
+    prefer-ip-address: true
+    
+info:
+  app.name: microservicecloud-sysRole
+  company.name: www.hisin.com
+  build.artifactId: $project.artifactId$
+  build.version:  $project.version$
+      
+      
