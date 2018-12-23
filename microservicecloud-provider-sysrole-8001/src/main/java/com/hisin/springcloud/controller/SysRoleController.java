@@ -13,6 +13,7 @@ import com.hisin.springcloud.entities.SysRole;
 import com.hisin.springcloud.service.SysRoleService;
 
 @RestController
+
 public class SysRoleController {
 	
 	@Autowired
